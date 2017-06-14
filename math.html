@@ -1,0 +1,38 @@
+<html>
+<head>
+<meta charset=utf-8/>
+<title>Math</title>
+<link rel = 'stylesheet' src = 'math.css'/>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]] } });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+<script>
+/*$(function() {
+  function makePreview() {
+    input = $('#input').val().replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    $('#preview').html("$$" + input + "$$");
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, "preview"]);
+  }
+
+  $('textarea').keyup(function() {
+    makePreview();
+  });
+
+  $('#preview').on('updated', function() {
+    makePreview();
+  });
+
+  makePreview();
+});
+</script>
+</head>
+<body>
+<h1>Math</h1>
+<h2>Combinatorics<h2>
+  <h3>The Basics</h3>
+    <p>Given a list of $n$ objects, the number of way to pick $k$ objects without regards to order is denoted as $\binom{n}{k}$ (pronounced "n choose k"). $\binom{n}{k}$ is equal to $\frac{n!}{(n-r)!(r!)}$</p>
+</body>
+</html>
